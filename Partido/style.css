@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: url(img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #1F77D1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-content h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Caixa de texto */
+.descricao p {
+    background: #1F77D1;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Imagem da pessoa */
+.person {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+}
+
+.person img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#futuro .descricao img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
