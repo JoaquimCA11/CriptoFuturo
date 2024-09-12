@@ -1,80 +1,94 @@
 /* Estilos gerais */
+html {
+    scroll-behavior: smooth; /* Rolagem suave para navegação */
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: url(img/background.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo do texto */
+    background: url(img/background.jpg) no-repeat center center fixed; /* Imagem de fundo fixa */
+    background-size: cover; /* Cobrir toda a área do fundo */
+    margin: 0; /* Remove a margem padrão do body */
 }
 
 /* Cabeçalho */
 header {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a {
-    color: #1F77D1;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    background: #222; /* Cor de fundo escura para o cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    display: flex; /* Utiliza flexbox para o layout */
+    align-items: center; /* Alinha verticalmente os itens */
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex; /* Utiliza flexbox para o logo */
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+    margin-right: 20px; /* Espaçamento entre o logo e o nome do site */
+}
+
+.logo img {
+    width: 50px; /* Largura fixa para a imagem do logo */
+}
+
+.site-name {
+    color: #1F77D1; /* Cor do nome do site */
+    font-size: 24px; /* Tamanho da fonte do nome do site */
+    font-weight: bold; /* Negrito para o nome do site */
+}
+
+nav {
+    margin-left: auto; /* Move o menu de navegação para a direita */
+}
+
+nav a {
+    color: #1F77D1; /* Cor dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+    margin: 0 15px; /* Espaçamento entre os links de navegação */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 
 /* Conteúdo principal */
 .main-content {
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 50px; /* Espaçamento interno do conteúdo principal */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: auto; /* Centraliza o conteúdo horizontalmente */
 }
 
 .main-content h1 {
-    color: white;
-    font-size: 48px;
-    margin-bottom: 20px;
+    color: white; /* Cor do título */
+    font-size: 48px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
-/* Caixa de texto */
+.descricao {
+    display: flex; /* Utiliza flexbox para o layout */
+    flex-wrap: wrap; /* Permite a quebra de linha dos itens */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.descricao h1 {
+    flex-basis: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
 .descricao p {
-    background: #1F77D1;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    max-width: 600px;
-    font-size: 16px;
-    line-height: 1.5;
+    background: #1F77D1; /* Cor de fundo dos parágrafos */
+    color: white; /* Cor do texto dos parágrafos */
+    padding: 15px; /* Espaçamento interno dos parágrafos */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte dos parágrafos */
+    line-height: 1.5; /* Altura da linha para legibilidade */
+    flex: 1 1 45%; /* Flexibilidade e largura mínima dos parágrafos */
+    min-width: 300px; /* Largura mínima dos parágrafos */
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
 }
 
-/* Imagem da pessoa */
-.person {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-}
-
-.person img {
-    width: 100%;
-    border-radius: 5px;
-}
-
+/* Imagem da seção Futuro */
 #futuro .descricao img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 20px auto; /* Espaçamento automático para centralizar a imagem */
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática para manter a proporção */
 }
